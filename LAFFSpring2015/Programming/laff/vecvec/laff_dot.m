@@ -19,7 +19,7 @@ if ( m_x * n_x ~= m_y * n_y )
     return
 end
 
-alpha = 0
+alpha = 0;
 
 if ( n_x == 1 )     % x is a column vector
     if ( n_y == 1 )     % y is a column vector
