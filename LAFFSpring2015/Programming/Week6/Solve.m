@@ -4,10 +4,8 @@ function [ A_out, b_out ] = Solve( A, b )
   
   z = Ltrsv_unb_var1( LU, b );
 
-  U = triu( LU );
-  
-  x = U \ z;
+  x = Utrsv_unb_var1( LU, z );
   
   A_out = LU;
-  b_out = LU*x;
+  b_out = x;
 return
